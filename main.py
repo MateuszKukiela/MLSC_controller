@@ -33,11 +33,13 @@ my_rotary.setup_switch(
   sw_short_callback=sw_short,
 )
 
-if __name__ == '__main__':
-    requests.post(URL, json={"effect": "effect_single"})
-    time.sleep(1)
-    requests.post(URL, json={"effect": "effect_off"})
-    time.sleep(1)
+my_rotary.watch()
+# if __name__ == '__main__':
+
+    # requests.post(URL, json={"effect": "effect_single"})
+    # time.sleep(1)
+    # requests.post(URL, json={"effect": "effect_off"})
+    # time.sleep(1)
     # while True:
     #     key = input()
     #     if key == 'w':
